@@ -3,16 +3,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Your Name — Portfolio</title>
+  <title>Baoni Li — Data Engineer</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
   <!-- NAV -->
   <nav>
-    <span class="nav-logo">YN</span>
+    <span class="nav-logo">BL</span>
     <ul>
       <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
       <li><a href="#experience">Experience</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#skills">Skills</a></li>
@@ -24,9 +25,12 @@
   <section id="hero">
     <div class="hero-content">
       <p class="hero-greeting">Hi, I'm</p>
-      <h1>Your Name</h1>
-      <h2>Software Engineer</h2>
-      <p class="hero-desc">I build clean, efficient software and love solving hard problems.</p>
+      <h1>Baoni Li</h1>
+      <h2>Data Engineer &amp; Business Intelligence Engineer</h2>
+      <p class="hero-desc">
+        MS in Information Systems @ Carnegie Mellon. I build scalable data pipelines,
+        ML systems, and BI solutions that turn raw data into real decisions.
+      </p>
       <div class="hero-links">
         <a href="#contact" class="btn">Get in touch</a>
         <a href="#projects" class="btn btn-outline">View my work</a>
@@ -40,19 +44,56 @@
     <div class="about-grid">
       <div class="about-text">
         <p>
-          I'm a software engineer with experience in building web applications
-          and backend services. I'm passionate about writing clean, maintainable
-          code and working on products that make a real difference.
+          I'm a data engineer and BI engineer with hands-on experience building
+          large-scale ETL pipelines, time-series forecasting models, and cloud-based
+          analytics platforms. I've worked across industry and research — from processing
+          500M+ rows of daily supply chain data at Amazon to building ML forecasting
+          frameworks at CMU.
         </p>
         <p>
-          When I'm not coding, you can find me hiking, reading, or exploring
-          new technologies.
+          I'm passionate about making data useful — whether that's designing a clean
+          data model, building an LLM-powered assistant, or delivering a dashboard
+          that actually gets used.
         </p>
         <a href="resume.pdf" class="btn" target="_blank">Download Resume</a>
       </div>
       <div class="about-image">
-        <div class="avatar-placeholder">YN</div>
+        <div class="avatar-placeholder">BL</div>
       </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education">
+    <h2 class="section-title">Education</h2>
+    <div class="timeline">
+
+      <div class="timeline-item">
+        <div class="timeline-meta">
+          <span class="timeline-date">Aug 2024 — Dec 2025</span>
+          <span class="timeline-company">Carnegie Mellon University</span>
+          <span class="timeline-location">Pittsburgh, PA</span>
+        </div>
+        <div class="timeline-body">
+          <h3>MS, Information Systems Management — Business Intelligence &amp; Data Analytics</h3>
+          <p class="timeline-gpa">GPA: 3.76/4.0 · Graduated with Distinction</p>
+          <p class="timeline-courses">Coursework: Object-Oriented Programming, Distributed Systems, Machine Learning with Large Datasets, Natural Language Processing, Generative AI, Unstructured Data Analysis, Deep Learning</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-meta">
+          <span class="timeline-date">Sep 2020 — Jun 2024</span>
+          <span class="timeline-company">UC San Diego</span>
+          <span class="timeline-location">La Jolla, CA</span>
+        </div>
+        <div class="timeline-body">
+          <h3>BS, Data Science</h3>
+          <p class="timeline-gpa">GPA: 3.87/4.0</p>
+          <p class="timeline-courses">Coursework: Data Structures &amp; Algorithms, Web Mining &amp; Recommender Systems, Probabilistic Modeling, Machine Learning, Database Management, Data Visualization, Linear Algebra, Statistics</p>
+        </div>
+      </div>
+
     </div>
   </section>
 
@@ -63,30 +104,47 @@
 
       <div class="timeline-item">
         <div class="timeline-meta">
-          <span class="timeline-date">Jan 2024 — Present</span>
-          <span class="timeline-company">Company Name</span>
+          <span class="timeline-date">May 2025 — Aug 2025</span>
+          <span class="timeline-company">Amazon</span>
+          <span class="timeline-location">Bellevue, WA</span>
         </div>
         <div class="timeline-body">
-          <h3>Software Engineer</h3>
+          <h3>Business Intelligence Engineer Intern</h3>
           <ul>
-            <li>Built and maintained REST APIs serving 100k+ daily requests.</li>
-            <li>Reduced page load time by 40% through performance optimizations.</li>
-            <li>Collaborated with cross-functional teams in an agile environment.</li>
+            <li>Designed and implemented SQL data models to generate 10+ supply chain metrics, defining fact and dimension tables to standardize metric computation across shared analytics pipelines.</li>
+            <li>Built scalable ETL pipelines in AWS Redshift to process 500M+ rows of daily data with incremental ingestion and primary key validation for reliable large-scale analytics.</li>
+            <li>Automated reporting workflows with AWS QuickSight by integrating SQL pipelines with multi-granular interactive dashboards, reducing manual analysis and ad-hoc requests by 40%.</li>
           </ul>
         </div>
       </div>
 
       <div class="timeline-item">
         <div class="timeline-meta">
-          <span class="timeline-date">Jun 2022 — Dec 2023</span>
-          <span class="timeline-company">Previous Company</span>
+          <span class="timeline-date">Oct 2024 — Apr 2025</span>
+          <span class="timeline-company">Carnegie Mellon University</span>
+          <span class="timeline-location">Pittsburgh, PA</span>
         </div>
         <div class="timeline-body">
-          <h3>Junior Developer</h3>
+          <h3>Research Assistant</h3>
           <ul>
-            <li>Developed new features for a SaaS product used by 5,000+ customers.</li>
-            <li>Wrote unit and integration tests, improving code coverage to 85%.</li>
-            <li>Mentored two interns during their summer rotations.</li>
+            <li>Built a data pipeline to retrieve spatiotemporal JSON and CSV data via REST APIs, transforming 15GB+ semi-structured datasets with Python (NumPy &amp; Pandas) for ML model training.</li>
+            <li>Developed time-series forecasting models for regional energy load using RNN, Prophet, ARIMA, and SARIMA; reduced Mean Squared Error by over 80% through residual-error fitting.</li>
+            <li>Built a multi-resolution forecasting framework using XGBoost to capture monthly, daily, and hourly patterns, improving accuracy by 15–20% over baseline models.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-meta">
+          <span class="timeline-date">Apr 2024 — Aug 2024</span>
+          <span class="timeline-company">City of San Diego</span>
+          <span class="timeline-location">San Diego, CA</span>
+        </div>
+        <div class="timeline-body">
+          <h3>Data Engineer Intern</h3>
+          <ul>
+            <li>Established an automated data pipeline with Apache Airflow to ingest from AWS S3, transform with Apache Spark, and load into Snowflake for Power BI analytics.</li>
+            <li>Integrated a natural language finance assistant using OpenAI API and LangChain, translating user questions into validated SQL queries for self-service reporting.</li>
           </ul>
         </div>
       </div>
@@ -100,38 +158,32 @@
     <div class="projects-grid">
 
       <div class="project-card">
-        <h3>Project One</h3>
-        <p>A brief description of what this project does and why it matters. Technologies used: Python, FastAPI, PostgreSQL.</p>
+        <div class="project-header">
+          <h3>Syria Rehabilitation Prediction System</h3>
+          <span class="project-date">Aug – Dec 2025</span>
+        </div>
+        <p class="project-context">Capstone Project with UNOPS</p>
+        <p>Applied semi-supervised learning to generate pseudo-labels, scaling usable training data from 100 to 1,000+ examples. Built a modular Python toolbox using LightGBM to predict per-service rehabilitation needs with a validation AUC of 0.87.</p>
         <div class="project-tags">
-          <span>Python</span><span>FastAPI</span><span>PostgreSQL</span>
+          <span>Python</span><span>LightGBM</span><span>Semi-supervised Learning</span><span>scikit-learn</span>
         </div>
         <div class="project-links">
-          <a href="https://github.com/bonnieli213/project-one" target="_blank">GitHub</a>
-          <a href="#" target="_blank">Live Demo</a>
+          <a href="https://github.com/bonnieli213" target="_blank">GitHub</a>
         </div>
       </div>
 
       <div class="project-card">
-        <h3>Project Two</h3>
-        <p>A brief description of what this project does and why it matters. Technologies used: React, Node.js, MongoDB.</p>
+        <div class="project-header">
+          <h3>Generative AI Lab</h3>
+          <span class="project-date">Nov – Dec 2025</span>
+        </div>
+        <p class="project-context">Course Project</p>
+        <p>Implemented a Retrieval Augmented Generation (RAG) system with optimized text chunking to analyze e-commerce listings, and an AI agent workflow using LLM APIs to generate product images from descriptions and reviews.</p>
         <div class="project-tags">
-          <span>React</span><span>Node.js</span><span>MongoDB</span>
+          <span>RAG</span><span>LLM APIs</span><span>LangChain</span><span>Python</span>
         </div>
         <div class="project-links">
-          <a href="https://github.com/bonnieli213/project-two" target="_blank">GitHub</a>
-          <a href="#" target="_blank">Live Demo</a>
-        </div>
-      </div>
-
-      <div class="project-card">
-        <h3>Project Three</h3>
-        <p>A brief description of what this project does and why it matters. Technologies used: Go, Docker, Redis.</p>
-        <div class="project-tags">
-          <span>Go</span><span>Docker</span><span>Redis</span>
-        </div>
-        <div class="project-links">
-          <a href="https://github.com/bonnieli213/project-three" target="_blank">GitHub</a>
-          <a href="#" target="_blank">Live Demo</a>
+          <a href="https://github.com/bonnieli213" target="_blank">GitHub</a>
         </div>
       </div>
 
@@ -143,21 +195,33 @@
     <h2 class="section-title">Skills</h2>
     <div class="skills-grid">
       <div class="skill-group">
-        <h4>Languages</h4>
+        <h4>Programming Languages</h4>
         <div class="skill-tags">
-          <span>Python</span><span>JavaScript</span><span>TypeScript</span><span>Go</span><span>SQL</span>
+          <span>Python</span><span>SQL</span><span>Java</span><span>R</span><span>TypeScript</span><span>JavaScript</span><span>HTML</span><span>CSS</span>
         </div>
       </div>
       <div class="skill-group">
-        <h4>Frameworks & Libraries</h4>
+        <h4>Cloud &amp; DevOps</h4>
         <div class="skill-tags">
-          <span>React</span><span>Node.js</span><span>FastAPI</span><span>Django</span>
+          <span>AWS</span><span>GCP</span><span>Azure</span><span>Docker</span><span>Kubernetes</span><span>Terraform</span><span>Jenkins</span><span>Git</span><span>CI/CD</span>
         </div>
       </div>
       <div class="skill-group">
-        <h4>Tools & Platforms</h4>
+        <h4>Data &amp; Analytics</h4>
         <div class="skill-tags">
-          <span>Git</span><span>Docker</span><span>AWS</span><span>PostgreSQL</span><span>Linux</span>
+          <span>Spark</span><span>Hadoop</span><span>Kafka</span><span>Airflow</span><span>Redshift</span><span>Snowflake</span><span>dbt</span><span>MongoDB</span><span>Databricks</span><span>Tableau</span><span>Power BI</span><span>QuickSight</span><span>pandas</span><span>NumPy</span><span>Matplotlib</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h4>Machine Learning &amp; AI</h4>
+        <div class="skill-tags">
+          <span>LangChain</span><span>scikit-learn</span><span>TensorFlow</span><span>PyTorch</span><span>spaCy</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h4>Web &amp; Application Dev</h4>
+        <div class="skill-tags">
+          <span>React</span><span>Node.js</span><span>Angular</span><span>Maven</span><span>Tomcat</span><span>JUnit</span>
         </div>
       </div>
     </div>
@@ -166,17 +230,17 @@
   <!-- CONTACT -->
   <section id="contact">
     <h2 class="section-title">Contact</h2>
-    <p class="contact-desc">I'm open to new opportunities. Feel free to reach out!</p>
+    <p class="contact-desc">I'm actively looking for full-time Data Engineer and BI Engineer roles. Let's connect!</p>
     <div class="contact-links">
-      <a href="mailto:you@email.com" class="btn">Email Me</a>
-      <a href="https://linkedin.com/in/yourprofile" target="_blank" class="btn btn-outline">LinkedIn</a>
+      <a href="mailto:baoni0213@gmail.com" class="btn">baoni0213@gmail.com</a>
+      <a href="https://linkedin.com/in/bonnieli213" target="_blank" class="btn btn-outline">LinkedIn</a>
       <a href="https://github.com/bonnieli213" target="_blank" class="btn btn-outline">GitHub</a>
     </div>
   </section>
 
   <!-- FOOTER -->
   <footer>
-    <p>Designed & built by Your Name · <a href="https://github.com/bonnieli213/bonnieli213.github.io" target="_blank">Source</a></p>
+    <p>Designed &amp; built by Baoni Li · <a href="https://github.com/bonnieli213/bonnieli213.github.io" target="_blank">Source</a></p>
   </footer>
 
 </body>
