@@ -87,11 +87,11 @@ nav ul a:hover {
 section {
   max-width: 900px;
   margin: 0 auto;
-  padding: 3.5rem 2rem;
+  padding: 3rem 2rem;
 }
 
-#hero {
-  padding-top: 5rem;
+#about {
+  padding-top: 1.5rem;
 }
 
 .section-title {
@@ -120,6 +120,8 @@ section {
   min-height: 90vh;
   display: flex;
   align-items: center;
+  padding-top: 4rem;
+  padding-bottom: 0;
 }
 
 .hero-greeting {
@@ -209,19 +211,15 @@ section {
   margin-top: 0.5rem;
 }
 
-.avatar-placeholder {
-  width: 120px;
-  height: 120px;
-  background: var(--bg-card);
-  border: 2px solid var(--border);
+.avatar-photo {
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.75rem;
-  font-weight: 700;
-  color: var(--accent-light);
+  object-fit: cover;
+  object-position: center top;
+  border: 3px solid var(--border);
   flex-shrink: 0;
+  box-shadow: 0 4px 16px rgba(16, 185, 129, 0.15);
 }
 
 /* =====================
@@ -299,6 +297,27 @@ section {
   font-size: 0.8rem;
   color: var(--text-muted);
   line-height: 1.6;
+}
+
+.school-badge {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 0.2rem 0.55rem;
+  border-radius: 4px;
+  letter-spacing: 0.05em;
+  margin-top: 0.25rem;
+  width: fit-content;
+}
+
+.school-badge.cmu {
+  background: #cc0000;
+  color: #fff;
+}
+
+.school-badge.ucsd {
+  background: #182b49;
+  color: #ffcd00;
 }
 
 /* =====================
